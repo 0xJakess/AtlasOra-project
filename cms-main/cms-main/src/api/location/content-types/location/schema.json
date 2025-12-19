@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country_long": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "string"
+    },
+    "formattedAddress": {
+      "type": "text"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "state_long": {
+      "type": "string"
+    },
+    "state_short": {
+      "type": "string"
+    },
+    "country_short": {
+      "type": "string"
+    },
+    "locationImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "numberOfPost": {
+      "type": "integer"
+    },
+    "properties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property.property",
+      "mappedBy": "locations"
+    }
+  }
+}

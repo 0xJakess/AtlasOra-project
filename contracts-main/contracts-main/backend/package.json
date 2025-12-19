@@ -1,0 +1,33 @@
+{
+  "name": "property-rental-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Property Rental System with meta-transactions",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --ignore ../event-listener.state --ignore event-listener.state --ignore ../*.state --ignore ../node_modules --ignore ../artifacts src/server.js",
+    "test": "node test-basic-integration.js",
+    "test:integration": "node test-integration.js"
+  },
+  "dependencies": {
+    "@coinbase/coinbase-sdk": "^0.25.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.14.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "blockchain",
+    "meta-transactions",
+    "property-rental",
+    "ethereum",
+    "viction"
+  ],
+  "author": "Property Rental System",
+  "license": "MIT"
+}

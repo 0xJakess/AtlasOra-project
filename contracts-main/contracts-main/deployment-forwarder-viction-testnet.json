@@ -1,0 +1,9 @@
+{
+  "network": "victionTestnet",
+  "chainId": 89,
+  "deployer": "0xCE98EcB600ED8465c0f29B1354d3D9e3b8A4a67C",
+  "deploymentTime": "2025-07-30T14:22:09.079Z",
+  "contracts": {
+    "MetaTransactionForwarder": "0xc431a01530b89Ab287B873650B6e91282d9ce55D"
+  }
+}

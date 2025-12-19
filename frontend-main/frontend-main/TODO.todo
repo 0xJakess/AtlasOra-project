@@ -1,0 +1,58 @@
+TODO HOME PAGE
+    force heart to go to login
+    change text "compares prices from 200+ booking sites to help you find the lowest price on the right hotel for you."
+
+SINGLE POST
+    render data
+
+LISTING (property)
+   add the filtering function
+        coming from locations
+        search 
+    
+    *add property review relation
+    add property owner relation
+    add property booking relation
+
+PRICING
+    Do we require this?
+
+AGENTS
+    should these become hosts? *this is always weird to me as you are a host and a browers on airbnb and it gets a little messy
+
+
+GENERAL
+    update allUseApiOld to the new code 
+    add a location default image to assets (use london for now)
+
+
+
+POST MVP
+    We could move the build rendering (locations etc) to the front end JS that way it be dynamic (but load slower of course)
+
+    DYNAMIC PRICING
+    For the MVP we will just have a fixed daily price but we would like to have dynamic pricing and smart pricing the way airbnb has it.
+
+    PROPERTY CHECK
+    check if the property is free.  For the MVP we will just show all properties and then have a is free check when the user tries to book.
+    The reason for this it is quite a big task as we have to store the state of the property every day for say 6 months, or store the exceptions 
+    and render out a free/booked block that we can binary check against. 
+
+    However, when there are only a few bookings on the platform this level of engineering is overkill.
+
+    There are several ways to achieve this but an custom schuedling calendar app that ingests the listing data from the API and does the check when you pass the
+    date to it.  
+
+    UPDATE COUNTER ON LOCATIONS
+
+    We will implement a cron job that counts the number of proeprties of each location and updates it.
+
+
+DONE
+
+*change footer graphic
+*remove agent from footer
+*change footer text
+*recreate location in the database
+*create the endpoint
+ *wire it up to location.json in frontend using the datacall functoin and QS

@@ -1,0 +1,26 @@
+{
+  "name": "tripfinder",
+  "description": "react next template",
+  "version": "5.5.0",
+  "private": true,
+  "author": "Atlasora",
+  "scripts": {
+    "clean": "lerna clean --yes && rm -rf node_modules",
+    "clean:build": "lerna exec -- rm -rf .next dist out build .docz .firebase",
+    "start:homes": "lerna run dev --scope=homes-cra",
+    "build:homes": "lerna run build --scope=homes-cra",
+    "serve:hotel": "lerna run serve --scope=homes-cra",
+    "firebase-deploy:homes": "build:homes && homes-cra run host:firebase",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "husky": "^9.1.6",
+    "lerna": "^8.1.8",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "serve": "^14.2.4"
+  }
+}

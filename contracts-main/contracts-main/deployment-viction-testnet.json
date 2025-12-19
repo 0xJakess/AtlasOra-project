@@ -1,0 +1,10 @@
+{
+  "network": "victionTestnet",
+  "chainId": 89,
+  "deployer": "0xCE98EcB600ED8465c0f29B1354d3D9e3b8A4a67C",
+  "deploymentTime": "2025-07-21T23:06:40.819Z",
+  "contracts": {
+    "PropertyMarketplace": "0x19641331663866894b69CD893b629ef405e11f8d",
+    "BookingManager": "0x54c3160A6d4238e3C6a2bD2BF386DDBc7722d0FB"
+  }
+}

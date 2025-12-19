@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proeprty_bookings",
+  "info": {
+    "singularName": "proeprty-booking",
+    "pluralName": "proeprty-bookings",
+    "displayName": "ProeprtyBooking"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property",
+      "inversedBy": "proeprty_booking"
+    },
+    "StartDate": {
+      "type": "date"
+    },
+    "EndDate": {
+      "type": "date"
+    },
+    "Guests": {
+      "type": "integer"
+    },
+    "Rooms": {
+      "type": "integer"
+    },
+    "PriceperNight": {
+      "type": "decimal"
+    },
+    "NumberOfNights": {
+      "type": "integer"
+    },
+    "AtlasFee": {
+      "type": "decimal"
+    },
+    "CleaningFee": {
+      "type": "decimal"
+    },
+    "TotalPaid": {
+      "type": "decimal"
+    },
+    "PaidBy": {
+      "type": "enumeration",
+      "enum": [
+        "Credit Card",
+        "Paypal",
+        "ETH",
+        "Bitcoin"
+      ]
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "BookingStatus": {
+      "type": "enumeration",
+      "default": "Upcoming",
+      "enum": [
+        "Upcoming",
+        "Active",
+        "Complete",
+        "Cancelled"
+      ]
+    },
+    "blockchainBookingId": {
+      "type": "biginteger"
+    },
+    "transactionHash": {
+      "type": "string"
+    },
+    "ipfsUri": {
+      "type": "string"
+    },
+    "paymentReference": {
+      "type": "string"
+    },
+    "payoutStatus": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "processing",
+        "completed",
+        "failed",
+        "skipped"
+      ],
+      "default": "pending"
+    },
+    "payoutTxHash": {
+      "type": "string"
+    },
+    "payoutAmount": {
+      "type": "decimal"
+    },
+    "payoutDate": {
+      "type": "datetime"
+    },
+    "payoutDestination": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "network": "victionTestnet",
+  "chainId": 89,
+  "deployer": "0xCE98EcB600ED8465c0f29B1354d3D9e3b8A4a67C",
+  "deploymentTime": "2025-08-27T13:08:17.314Z",
+  "contracts": {
+    "PropertyMarketplace": "0xb2417A66655c675af6B62EC111fE28B35f2fC2D8",
+    "BookingManager": "0x5d4970f43043A8C476540b486589B2adA2aEE5FC",
+    "MetaTransactionForwarder": "0x9849aB975eA04948651ecc5511Cc7109ea1144f7"
+  }
+}

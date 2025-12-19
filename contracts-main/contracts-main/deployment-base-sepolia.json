@@ -1,0 +1,13 @@
+{
+  "network": "baseSepolia",
+  "chainId": 84532,
+  "deployer": "0xCE98EcB600ED8465c0f29B1354d3D9e3b8A4a67C",
+  "treasury": "0xCE98EcB600ED8465c0f29B1354d3D9e3b8A4a67C",
+  "deploymentTime": "2025-12-01T19:17:22.329Z",
+  "contracts": {
+    "PropertyMarketplace": "0xfe5016B7Ede1f5404747bb4A934Ec0E24c94f9ee",
+    "BookingManager": "0x7F02Dd4E78E7d955eF0AfA785b6F4C038c27479c",
+    "MetaTransactionForwarder": "0x5BfbEEbA3AA5EF4D5324986Ac606C68134C40c91",
+    "EURCToken": "0x808456652fdb597867f38412077A9182bf77359F"
+  }
+}

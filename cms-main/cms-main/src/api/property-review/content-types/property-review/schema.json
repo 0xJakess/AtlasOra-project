@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_reviews",
+  "info": {
+    "singularName": "property-review",
+    "pluralName": "property-reviews",
+    "displayName": "PropertyReview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Review": {
+      "type": "text"
+    },
+    "ReviewDate": {
+      "type": "date"
+    },
+    "Service": {
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 5
+    },
+    "Home": {
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 5
+    },
+    "Cleanness": {
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 5
+    },
+    "Host": {
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 5
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "property_reviews"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "property_reviews"
+    },
+    "LikeCounter": {
+      "type": "integer",
+      "default": 0
+    },
+    "DislikeCounter": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
